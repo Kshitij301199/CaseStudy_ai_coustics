@@ -1,0 +1,6 @@
+numpy
+pydub
+eyed3
+librosa
+matplotlib
+beautifulsoup4

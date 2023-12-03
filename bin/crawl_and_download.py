@@ -58,6 +58,7 @@ def crawl_and_extract_mp3_links(url:str, num_links:int = 10):
     """
     try:
         # Send an HTTP request to the webpage
+        print(f"Num of files to download: {num_links}")
         response = requests.get(url,timeout=10)
         response.raise_for_status()  # Check if the request was successful
 
@@ -79,6 +80,8 @@ def crawl_and_extract_mp3_links(url:str, num_links:int = 10):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Analyse audio mp3 file")
     parser.add_argument("--link", required=True , help="URL to the Website")
+    parser.add_argument("--n", required=False , help="Number of links to download",type=int)
+    
     args = parser.parse_args()
     
     mp3_links = crawl_and_extract_mp3_links(args.link)
