@@ -17,13 +17,29 @@
 
     └───bin
         ├── crawl_and_download.py
-        usage: crawl_and_download.py [-h] --link LINK 
-        [--n N]
+        usage: crawl_and_download.py [-h] --link
+                             LINK [--n N]    
+
+        Analyse audio mp3 file
+
+        optional arguments:
+        -h, --help   show this help message and    
+                    exit
+        --link LINK  URL to the Website
+        --n N        Number of links to download 
 example link used: `https://www.openculture.com/freeaudiobooks`
 
     └───bin
         ├── audio_analysis.py
-        usage: audio_analysis.py [-h] --filename FILENAME
+        usage: audio_analysis.py [-h] --filename
+                         FILENAME
+
+        Analyse audio mp3 file
+
+        optional arguments:
+        -h, --help           show this help        
+                            message and exit      
+        --filename FILENAME  Path to the MP3 file 
 
 # Installation
 
