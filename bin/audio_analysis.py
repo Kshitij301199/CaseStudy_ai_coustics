@@ -78,7 +78,7 @@ def main():
 
     args = parser.parse_args()
     title = read_mp3_metadata(args.filename)
-    # analyze_audio_quality(args.filename)
+    analyze_audio_quality(args.filename)
     plot_librosa(args.filename,title)
 
 if __name__ == "__main__":
