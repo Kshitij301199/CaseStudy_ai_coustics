@@ -1,6 +1,40 @@
 # CaseStudy_ai_coustics
 
-## Directory Structure
+## Overview
+
+This project is designed to crawl the [Open Culture](https://www.openculture.com/freeaudiobooks) website for free audiobooks, download the available MP3 files, and perform a comprehensive analysis of the audio data.
+
+## Features
+
+1. **Web Crawling:** The script initiates a web crawl on the provided link to extract URLs of MP3 files available on the Open Culture website.
+
+2. **Download MP3 Files:** The extracted MP3 URLs are used to download the corresponding audio files to a local directory.
+
+3. **Audio Analysis:** The downloaded MP3 files undergo detailed analysis, including duration, channels, sample width, frame rate, and loudness. The analysis results are presented in a readable format.
+
+# Getting Started
+
+## Prerequisites
+
+- Python 3.x installed
+- Dependencies installed (specified in the `requirements.txt` file)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+# Directory Structure
 
     ├───audio_files
         ├── ...
@@ -13,7 +47,7 @@
     └───images
         ├── ...
 
-## Usage
+# Usage
 
     └───bin
         ├── crawl_and_download.py
@@ -43,19 +77,31 @@ example link used: `https://www.openculture.com/freeaudiobooks`
 
 # Installation
 
-## Prerequisites
-- [Python](https://www.python.org/downloads/) (version 3.6 or higher)
+1. Clone the repository:
 
-## Installing Dependencies
-You can use this requirements.txt file to install the dependencies using the following command:
+   ```bash
+   git clone https://github.com/Kshitij301199/CaseStudy_ai_coustics.git
+   cd CaseStudy_ai_coustics
+   ```
 
-    pip install -r requirements.txt
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 # License
 
-This project is licensed under the [MIT License](LICENSE.md) - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the [MIT License](LICENSE.md). Feel free to use, modify, and distribute the code according to the terms of the license.
 
+# Acknowledgements
 
-## Author
+Special thanks to [Open Culture](https://www.openculture.com/freeaudiobooks) for providing free audiobooks, and to the open-source community for creating and maintaining the tools used in this project.
+
+# Contributions
+
+Contributions are welcome! If you encounter issues or have suggestions for improvements, please [open an issue](https://github.com/your-username/your-repository/issues) or submit a pull request.
+
+# Author
 
 Kshitij Kar
